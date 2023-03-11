@@ -1,8 +1,8 @@
 # if you get rate limited, you can just restart the program after an hour and it will only continue with unused codes
 
 # the symbols in front of the codes after running the program are symbolizing:
-# # = done
-# + = already owned
+# + = done
+# # = already owned
 # ! = invalid key
 
 # steam credentials

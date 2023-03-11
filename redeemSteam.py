@@ -44,7 +44,7 @@ def update_codes_file(code, browser):
         browser.find_element(
             By.XPATH, f'//span[@class="checkout_error" and contains(@style, "display: block") and contains(text(), "{settings.AccountOwnsProduct}")]')
         with open("codes.txt", "r+") as f:
-            file_content = f.read().replace(code, f"+{code}")
+            file_content = f.read().replace(code, f"#{code}")
             f.seek(0)
             f.write(file_content)
     except:
@@ -65,7 +65,7 @@ def update_codes_file(code, browser):
                 return False
             except:
                 with open("codes.txt", "r+") as f:
-                    file_content = f.read().replace(code, f"#{code}")
+                    file_content = f.read().replace(code, f"+{code}")
                     f.seek(0)
                     f.write(file_content)
                 click_element(
